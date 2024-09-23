@@ -22,7 +22,26 @@
         </nav>
     </header>
     <main>
-
+        <section>
+            <h2>Kontakt oss</h2>
+        </section>
+        <section>
+            <form method="post">
+                <label>
+                    Navn:
+                    <input type="text" name="navn" placeholder="Fornavn Etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </label>
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="brukernavn@epost.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" required>
+                </label>
+                <label>
+                    Melding:
+                    <textarea name="melding" maxlength="100" required></textarea>
+                </label>
+                <input type="submit" value="Send"> 
+            </form>
+        </section>
     </main>
     <footer>
 
