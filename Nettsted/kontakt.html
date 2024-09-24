@@ -38,13 +38,18 @@
             <h2>Kontakt oss</h2>
         </section>
         <section>
+            <!--3.3 Form med <label>-tagger for å sikre brukervennlighet. Id inkludert i input for å linke label og input sammen-->
             <form method="post">
+                <!--3.2.a Tekstfelt for navn, kun bokstaver og mellomrom, minimum 2 tegn-->
                 <label for="name">Navn:</label>
                 <input type="text" name="name" id="name" placeholder="Fornavn Etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>                
+                <!--3.2.b E-postfelt for epost, må være gyldig e-postadresse-->
                 <label for="email">E-post:</label>
                 <input type="email" name="email" id="email" placeholder="brukernavn@epost.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" required>
+                <!--3.2.c Tekstområde for melding, maks 100 tegn-->
                 <label for="melding">Melding:</label>
                 <textarea name="melding" id="melding" placeholder="Skriv meldingen din her" maxlength="100" required></textarea>
+                <!--3.2.d Send-knapp-->
                 <input type="submit" value="Send melding"> 
             </form>
         </section>
