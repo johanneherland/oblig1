@@ -45,7 +45,7 @@
                 <input type="text" name="name" id="name" placeholder="Fornavn Etternavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>                
                 <!--3.2.b E-postfelt for epost, må være gyldig e-postadresse-->
                 <label for="email">E-post:</label>
-                <input type="email" name="email" id="email" placeholder="brukernavn@epost.com" required>
+                <input type="email" name="email" id="email" placeholder="brukernavn@epost.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$]" required>
                 <!--3.2.c Tekstområde for melding, maks 100 tegn-->
                 <label for="melding">Melding:</label>
                 <textarea name="melding" id="melding" placeholder="Skriv meldingen din her" maxlength="100" required></textarea>
